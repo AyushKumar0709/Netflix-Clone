@@ -1,0 +1,658 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+.logo{
+    /* border: 2px solid black; */
+    margin-left: 140px;
+}
+img{
+    height: 100px;
+    width: 200px;
+}
+nav{
+    /* border: 2px solid black; */
+    height: 80px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: 13px;
+}
+.lang{
+    /* border: 2px solid yellow; */
+    width: 130px;
+    height: 40px;
+    padding-left: 5px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+ion-icon{
+    font-size: 20px;
+}
+.firstname{
+    width:100%;
+    height:100%;
+    font-size:15px;
+    color: white;
+    border: none;
+    background: transparent;
+}
+.button{
+    /* border: 1px solid black; */
+    width: 70px;
+    height: 40px;
+}
+nav button{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.firstPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid rgba(169, 169, 169, 0.481);
+}
+.firstPage img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.content{
+    /* border: 2px solid black; */
+    width: 80%;
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: white;
+}
+.content h1{
+    font-size: 50px;
+    margin-right: 50px;
+}
+.content p:first-of-type{
+    font-size: 30px;
+    width: 75%;
+    padding-left: 100px;
+}
+.content p:nth-of-type(2){
+    font-size: 25px;
+}
+.email{
+    /* border: 1px solid white; */
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+    gap: 30px;
+}
+.email input{
+    width: 40%;
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.email button{
+    width: 20%;
+    height: 70%;
+    font-size: 25px;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:#e50914;
+}
+.secondPage{
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: black;
+    border-bottom: 5px solid rgba(169, 169, 169, 0.481);
+
+}
+.content2{
+    border: 1px solid black;
+    width: 40%;
+    color: white;
+    height: max-content;
+    margin-left: 130px;
+}
+.secondPage h1{
+    font-size: 55px;
+}
+.secondPage p{
+    font-size: 30px;
+}
+.TV{
+    border: 2px solid black;
+    width: 38%;
+    height: 70%;
+    margin-right: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.TV video{
+    width: 95.5%;
+    height: 60%;
+    margin-left: 15px;
+    position: absolute;
+    z-index:3;
+}
+.TV img{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+}
+.thirdPage{
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid red; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;   
+    border-bottom:5px solid rgba(169, 169, 169, 0.481) ;
+}
+.phone{
+    display: flex;
+    height: 450px;
+    width: 600px;
+}
+.Phone{
+    width: 100%;
+    height: 100%;
+    position:  relative;
+    z-index: 1;
+}
+.players{
+    height: 15%;
+    width: 19%;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(92, 89, 89);
+    position: absolute;
+    z-index: 3;
+    /* gap: 10px; */
+    align-self: center;
+    left: 16%;
+    top: 64%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.927);
+}
+.playerimage{
+    height: 100%;
+    width: 20%;
+    padding: 4px;
+}
+.downloading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 15px;
+    /* padding-left: 5px; */
+}
+.downloading h1{
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.downloading p{
+    color: #0062cd;
+    font-weight: lighter;
+    /* padding-left: 10px; */
+}
+.download{
+    height: 50%;
+    width: 40px;
+    align-self: center;
+}
+.content3{
+    /* border: 2px solid  red; */
+    height: 80%;
+    width: 40%;
+    margin-right: 50px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.content3 h1{
+    font-size: 55px;
+}
+.content3 p{
+    font-size: 22px;
+}
+.fourthPage{
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border-bottom:5px solid rgba(169, 169, 169, 0.481) ;
+
+}
+.movie{
+    width: 40%;
+    height: 80%;
+    /* border: 2px solid red; */
+    position: relative;
+    background-color: black;
+}
+.movie video{
+    width: 80%;
+    height: 80%;
+    z-index: 5;
+}
+.movie img{
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    right:-4px;
+    top:15px;
+}
+.content4{
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    /* align-items: center; */
+    justify-content: center;
+}
+.content4 h1{
+    font-size: 65px;
+}
+.content4 p{
+    font-size: 24px;
+}
+.fifthPage{
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border-bottom:5px solid rgba(169, 169, 169, 0.481) ;
+
+}
+.fifthImage{
+    height: 80%;
+    width: 40%;
+    /* border: 2px solid red; */
+    margin-left: 70px;
+}
+.fifthImage img{
+    height: 100%;
+    width: 100%;
+}
+.content5{
+    height: 80%;
+    width: 40%;
+    color: white;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.content5 h1{
+    font-size: 55px;
+}
+.content5 p{
+    font-size: 25px;
+    font-weight: lighter;
+}
+.seventhPage{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    color: gray;
+    justify-content: space-evenly;
+    background-color: black;
+}
+a{
+    color: gray;
+    font-size: 15px;
+
+}
+.links1 p{
+    font-weight: 500;
+}
+.links1{
+    /* border: 2px solid red; */
+    width: 17%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 10px;
+}
+.links2{
+    /* border: 2px solid red; */
+    width: 10%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 12px;
+
+}
+.links3{
+    /* border: 2px solid red; */
+    width: 12%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.links4{
+    /* border: 2px solid red; */
+    width: 10%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.lastname{
+    width:60%;
+    /* border: 2px solid black; */
+    height:100%;
+    font-size:15px;
+    color: white;
+    border: none;
+    background: transparent;
+}
+.Lastlang{
+    
+    width: 130px;
+    height: 35px;
+    padding-left: 5px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    
+    border: 1px solid white;
+}
+.sixthPage{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-bottom:5px solid rgba(169, 169, 169, 0.481) ;
+    
+
+}
+.questionHeading{
+    font-size: 35px;
+    /* border: 2px solid red; */
+    margin: 20px;
+}
+.Questions{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: center; */
+}
+.Questions div,button{
+    background-color: #2d2d2d;
+    color: white;
+}
+.first1{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.first1 pre{
+    font-size: 25px;
+}
+.first1 button{
+    font-size: 60px;
+    border: none;
+    background: none;
+}
+.answer1{
+    /* border: 2px solid red; */
+    width:  100%;
+    height: 180px;
+    position: relative;
+    padding:10px;
+    font-size: 24px;
+    display:none;
+    background-color: #2d2d2d;
+    color: white;
+}
+.second2{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.second2 pre{
+    font-size: 25px;
+}
+.second2 button{
+    font-size: 60px;
+    border: none;
+    background: none;
+}
+.answer2{
+    width:  100%;
+    height: 120px;
+    position: relative;
+    padding:30px;
+    font-size: 24px;
+    display:none;
+    background-color: #2d2d2d;
+    color: white;
+}
+.third3{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.third3 pre{
+    font-size: 25px;
+}
+.third3 button{
+    font-size: 60px;
+    border: none;
+    background: none;
+}
+.answer3{
+    width:  100%;
+    height: 140px;
+    position: relative;
+    padding:30px;
+    font-size: 24px;
+    display:none;
+    background-color: #2d2d2d;
+    color: white;
+}
+.fourth4{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.fourth4 pre{
+    font-size: 25px;
+}
+.fourth4 button{
+    font-size: 60px;
+    border: none;
+    background: none;
+}
+.answer4{
+    width:  100%;
+    height: 140px;
+    position: relative;
+    padding:30px;
+    font-size: 24px;
+    display:none;
+    background-color: #2d2d2d;
+    color: white;
+}
+.fifth5{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.fifth5 pre{
+    font-size: 25px;
+}
+.fifth5 button{
+    font-size: 60px;
+    border: none;
+    background: none;
+}
+.answer5{
+    width:  100%;
+    height: 140px;
+    position: relative;
+    padding:30px;
+    font-size: 24px;
+    display:none;
+    background-color: #2d2d2d;
+    color: white;
+}
+.sixth6{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: lighter;
+}
+.sixth6 pre{
+    font-size: 25px;
+}
+.sixth6 button{
+    font-size: 60px;
+    border: none;
+    background: none;
+}
+.answer6{
+    width:  100%;
+    height: 180px;
+    position: relative;
+    padding:30px;
+    font-size: 24px;
+    display:none;
+    background-color: #2d2d2d;
+    color: white;
+}
+.EmailAddress input{
+    width: 380px;
+    height: 50px;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background-color: #0f0f0f;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+    left: -70px;
+    color: gray;
+    padding-left: 15px;
+}
+.EmailAddress button{
+    font-size: 28px;
+    position: relative;
+    left: -65px;
+    height: 50px;
+    width: 220px;
+    border-radius: 10px;
+    border: none;
+    background-color:#e50914 ;
+    /* padding: 10px; */
+}
+.EmailAddress{
+    /* border: 2px solid yellow; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
